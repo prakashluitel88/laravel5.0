@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    #AddHandler application/x-httpd-php55 .php
+    RewriteEngine On
+    RewriteRule ^(.*)$ laravel5/public/$1 [L]
+</IfModule>
